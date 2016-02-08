@@ -1,0 +1,13 @@
+Package: MyPackage
+Title: Explores the average age of Williams College faculty.
+Version: 0.0.0.9000
+Author: Connor Mulhall '17 <cpm4@williams.edu>
+Maintainer: Connor Mulhall <cpm4@williams.edu>
+Description: The package contains the means to explore potential relationships between age and department of the Williams College faculty.
+Depends: R (>= 3.1.2)
+License: Unlimited
+LazyData: true
+Suggests: knitr
+VignetteBuilder: knitr
+URL: http://github.com/CMulhall/MyPackage
+Packaged: 2016-02-08 12:04:35 UTC; Connor

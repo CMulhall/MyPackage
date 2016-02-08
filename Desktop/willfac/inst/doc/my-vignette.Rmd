@@ -1,0 +1,32 @@
+---
+title: "My Package Vignette"
+author: Connor Mulhall '17
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+In my package I have included a csv file with the faculty names, year of B.A, and department. My package code can be used in the following manner to answer the question about the average age of the Williams College faculty.
+
+Note: Please install my package before knitting this document.
+
+```{r}
+library(MyPackage)
+allfaculty <- facSearch()
+facobject <- createfacTrac(allfaculty)
+summary(facobject)
+```
+
+
+The above output, shows the average age of the faculty, as well as the oldest and youngest (or the first alphabetically if there are multiple) and the number of faculty included in the search. I have also added some features where you can gather the same information on a single department, or a single person which is less exciting.
+
+```{r}
+mathfaculty <- facSearch("Mathematics", 2)
+mathfac <- createfacTrac(mathfaculty)
+summary(mathfac)
+```
+
+Above is just the math department's information. If I had more time, I would have attempted to find the average age of each department and compared them. While I do not know what the results would have produced, I would be interested if the department's with younger average ages were fields that have been greatly impacted by new technology in the last 10-15 years that may have made the previous faculty members not as qualified as applicants just coming out of a PhD program. I would have also provided some visuals (a histogram of age at a minimum) and I wonder if I would have seen two or three clusters which might suggest that faculty are hired in waves since they work until retirement and especially at Williams very few leave for jobs at other schools.
