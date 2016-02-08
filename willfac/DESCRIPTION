@@ -1,0 +1,8 @@
+Package: willfac
+Title: Explores various age-related facts about the Williams College faculty
+Version: 0.0.0.9000
+Author: Connor Mulhall <cpm4@williams.edu>
+Description: The willfac package provides a way to explore potential relationships between age and department within the Williams College faculty.
+Depends: R (>= 3.1.2)
+License: What license is it under?
+LazyData: true
